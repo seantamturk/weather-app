@@ -1,7 +1,7 @@
 var APIKey = "960d808ec0452e361d474ea77ae8454c";
 var city = "London"
 
-var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey + "&units=metric";
+var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey + "&units=metric";
 
 fetch(queryURL)
     .then(function (response) {
