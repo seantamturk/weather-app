@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather App</title>
-  <!-- <link rel="stylesheet" href="./assets/style.css"> -->
-</head>
+  <body>
+    <header class="bg-primary text-white text-center py-3">
+      <h1>Weather App</h1>
+    </header>
 
-<body>
-  <header>
-    <h1>Weather App</h1>
-  </header>
+    <div class="container mt-4">
+      <div class="row">
+        <aside class="col-md-4">
+          <form id="search-form" class="mb-3">
+            <div class="input-group">
+              <input
+                type="text"
+                id="search-area"
+                class="form-control"
+                placeholder="Enter a city"
+              />
+              <div class="input-group-append">
+                <button type="submit" id="search-btn" class="btn btn-primary">
+                  Search
+                </button>
+              </div>
+            </div>
+          </form>
+          <div id="history"></div>
+        </aside>
 
-  <aside>
-    <form id="search-form">
-      <input type="text" id="search-area" placeholder="Enter a city">
-      <button type="submit" id="search-btn">Search</button>
-    </form>
-    <div id="history"></div>
-  </aside>
+        <main class="col-md-8">
+          <section id="today" class="mt-4 text-white bg-primary"></section>
+          <section
+            id="five-day-header"
+            class="mt-4 text-white bg-primary"
+          ></section>
+          <section id="forecast" class="row"></section>
+        </main>
+      </div>
+    </div>
 
-  <main>
-    <section id="today"></section>
-    <section id="five-day-header"></section>
-    <section id="forecast"></section>
-  </main>
-
-  <script src="./assets//javascript/script.js"></script>
-</body>
-
+    <script src="./assets//javascript/script.js"></script>
+  </body>
 </html>
