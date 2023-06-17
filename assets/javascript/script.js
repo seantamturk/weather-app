@@ -15,27 +15,6 @@ searchForm.addEventListener("submit", function(event) {
     coordinatesFromCity(city);
 });
 
-// Function to render buttons from localStorage
-// function renderButtonsFromLocalStorage() {
-//     // Clear existing buttons
-//     historyElement.innerHTML = '';
-  
-//     // Retrieve data from localStorage
-//     for (let i = 0; i < localStorage.length; i++) {
-//       const key = localStorage.key(i);
-//       const value = localStorage.getItem(key);
-  
-//       // Check if the value matches the weather planner
-//       if (value === "weather-planner") {
-//         const button = document.createElement('button');
-//         button.classList.add('custom-btn', 'my-1');
-//         button.textContent = key;
-//         historyElement.appendChild(button);
-//       }
-//     }
-//   }
-  
-
   populateHistory();
 
 function  populateWeather(){
